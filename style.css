@@ -250,11 +250,6 @@ section {
         height: auto;
     }
 
-    .card:hover {
-        transform: none;
-        margin: 0;
-    }
-
     /* Contact */
     .email-phone {
         flex-direction: column;
