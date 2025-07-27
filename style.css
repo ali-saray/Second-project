@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 200px;
+    background-color: whitesmoke;
+}
+.logo{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+}
+.nav a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: black;
+}
+header a:hover{
+    color: #7b00ff
+}
+section {
+    padding: 100px 200px;
+    transition: 0.7s;
+    
+}
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.main img {
+    width: 500px;
+    height: 500px;
+}
+.main h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.main h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #7b00ff;
+    padding-bottom: 5px;
+}
+.main-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #7b00ff solid;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: white;
+    background-color: #7b00ff;
+    border-radius: 5px;
+    font-size: 2rem;
+    transition: 0.4s ease;
+}
+.main-btn:hover {
+    color: #7b00ff;
+    background-color: white;
+    transform: scale(1.1);
+    transition: 0.4s ease;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}
+.social-icons a{
+    padding-right: 5px;
+    font-size: 1.7rem;
+    padding-right: 10px;
+}
+
+.services{
+    background-color: aliceblue;
+}
+.title {
+    color: #7b00ff;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card {
+    width: 21em;
+    padding: 10px;
+    margin-right: 10px;
+    border: #7b00ff solid;
+    box-shadow: 2px 5px 8px #7b00ff;
+    transition: 0.6s ease;
+    border-radius: 25px;
+    height: 400px;
+}
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    margin: 0 30px;
+    transition: 0.6s ease;
+}
+.icon {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3em;
+    color: #7b00ff;
+}
+.info {
+    text-align: center;
+    font-size: 14px;
+}
+.description {
+    text-align: center;
+    text-transform: capitalize;
+}
+.Contact {
+    background-color: #7b00ffd8;
+}
+.Contact h1 {
+    color: white;
+}
+.email-phone {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 250px;
+}
+.email-phone a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.email-phone i{
+    margin-right: 10px;
+}
+.so {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: aliceblue;
+    font-size: 30px;
+    margin: 0 400px;
+}
+.so a{
+    margin-top: 40px;
+    color: white;
+}
+@media(max-width: 480px){
+    header {
+        padding: 25px 10px;
+        margin: 0;
+    }
+    .logo{
+        font-size: 18px;
+    }
+
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .main{
+        padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 10px;
+    }
+    .main img{
+        width: 250px;
+        height: 250px;
+        border-radius: 20px;
+    }
+    .card {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .title {
+        margin-top: 20px;
+    }
+    .email-phone a{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 40px;
+        margin: 0 15px;
+    }
+    .so a{
+        margin: 8px;
+    }
+    .card:hover {
+        margin-bottom: 45px;
+    }
+}
+@media(max-width: 1100px){
+    header {
+        padding: 25px;
+    }
+    .header a{
+        font-size: 25px;
+    }
+    .nav a{
+        font-size: 25px;
+    }
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .main{
+        padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .card {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .card:hover {
+        margin-bottom: 45px;
+    }
+    .so a{
+        margin: 10px;
+        padding-top: 10px;
+    }
+}  
